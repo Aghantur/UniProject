@@ -1,24 +1,43 @@
-﻿body {
+﻿body, h1, h2, h3, h4, h5, h6 {
     padding-top: 50px;
     padding-bottom: 20px;
+    font-family: "Karma", sans-serif;
 }
 
-/* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
 .dl-horizontal dt {
     white-space: normal;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.w3-bar-block .w3-bar-item {
+    padding: 20px;
+}
+
+.nav navbar-nav li a {
+    font-family: Jokerman;
+}
+
+.jumbotron h1 {
+    font-family: "Jokerman";
+    text-align: center;
+}
+
+.container ul li {
+    font-family: Algerian;
+    font-size: 20px;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-family: 'Bauhaus 93';
 }
