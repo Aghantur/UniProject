@@ -54,6 +54,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationDbContext.cs" />
+    <Compile Include="Migrations\201706080930137_Migration.cs" />
+    <Compile Include="Migrations\201706080930137_Migration.Designer.cs">
+      <DependentUpon>201706080930137_Migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706080945218_TableTo.cs" />
+    <Compile Include="Migrations\201706080945218_TableTo.Designer.cs">
+      <DependentUpon>201706080945218_TableTo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -65,6 +74,14 @@
       <Project>{D06A9D2E-C6F6-4831-8991-70F5EE5BB420}</Project>
       <Name>Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201706080930137_Migration.resx">
+      <DependentUpon>201706080930137_Migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706080945218_TableTo.resx">
+      <DependentUpon>201706080945218_TableTo.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
