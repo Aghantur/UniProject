@@ -11,6 +11,7 @@ using Entities;
 
 namespace ToDoList.Controllers
 {
+    [Authorize]
     public class TodoListsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
